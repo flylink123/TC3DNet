@@ -264,11 +264,11 @@ class TCN3DNet(nn.Module):
         
         
         self.fc1 = nn.Sequential(
-            nn.Linear(6 * 62 * 25, 62, bias=True),
+            nn.Linear(6 * 62 * 25, 71, bias=True),
             # nn.Dropout(0.2)
         )
         self.fc2 = nn.Sequential(
-            nn.Linear(62, 4, bias=True),
+            nn.Linear(71, 4, bias=True),
             # nn.Dropout(0.2)
         )
         
